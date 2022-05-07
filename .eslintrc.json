@@ -7,9 +7,20 @@
 	"parser": "@typescript-eslint/parser",
 	"parserOptions": {
 		"project": "./tsconfig.json",
+		"ecmaFeatures": {
+			"jsx": true,
+			"modules": true
+		},
 		"ecmaVersion": "latest",
 		"sourceType": "module"
 	},
 	"plugins": ["react", "@typescript-eslint"],
-	"rules": {}
+	"settings": {
+		"import/extensions": [".js", ".mjs", ".jsx", ".ts", ".tsx"]
+	},
+	"rules": {
+		"react/react-in-jsx-scope": "off",
+		"import/no-extraneous-dependencies": "off",
+		"import/extensions": "off"
+	}
 }
