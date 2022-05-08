@@ -1,0 +1,37 @@
+const FilterBar = ({ selectedDate, selectedStatus, selectedUpcoming }: any) => {
+	return (
+		<div>
+			<select
+				className="form-select form-select-lg mb-3"
+				aria-label=".form-select-lg example"
+				onChange={}
+			>
+				<option selected>Select Launch Date</option>
+				<option value="last-week">Last Week</option>
+				<option value="last-month">Last Month</option>
+				<option value="last-year">Last Year</option>
+				<option value="last-5-year">Last Year</option>
+			</select>
+			<select
+				className="form-select form-select-lg mb-3"
+				aria-label=".form-select-lg example"
+				onChange={handleFiltersInput("launchStatus")}
+			>
+				<option selected>Select Launch Status</option>
+				<option value="true">Success</option>
+				<option value="null">Failure</option>
+			</select>
+			<select
+				className="form-select form-select-lg mb-3"
+				aria-label=".form-select-lg example"
+				onChange={handleFiltersInput("isUpcoming")}
+			>
+				<option selected>Upcoming Status</option>
+				<option value="true">Yes</option>
+				<option value="false">Not</option>
+			</select>
+		</div>
+	);
+};
+
+export default FilterBar;
