@@ -12,3 +12,13 @@
 - Pagination Added.
 - Details page added.
 - Code Restructured.
+
+### Technologies & npm packages:
+
+1. React JS
+2. Typescript
+3. Redux
+4. Axios
+5. React Bootstrap
+6. React Icons
+7. Moment JS
