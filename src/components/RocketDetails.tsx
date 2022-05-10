@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link, useParams } from "react-router-dom";
+import { FaHome } from "react-icons/fa";
 import Header from "./Header";
 import Loading from "./Loading";
 
@@ -29,7 +30,15 @@ const RocketDetails = () => {
   return (
     <Container className="text-light">
       <Header />
-      <Link to="/">Back to Home</Link>
+      <div className="col-3">
+        <Link
+          to="/"
+          className="text-underline-none btn btn-warning fs-4 d-flex align-items-center justify-content-center w-75"
+        >
+          <FaHome className="fs-2" />
+          <span className="ps-2">Back to Home</span>
+        </Link>
+      </div>
       {!flightData ? (
         <Loading />
       ) : (

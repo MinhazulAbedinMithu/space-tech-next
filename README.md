@@ -10,3 +10,5 @@
 - Filtering Implement.
 - Improve UI
 - Pagination Added.
+- Details page added.
+- Code Restructured.
